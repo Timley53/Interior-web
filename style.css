@@ -44,11 +44,13 @@ body {
   font-family: sans-serif;
   font-size: large;
 }
+.bar {
+  display: none;
+}
 .header i {
   margin: auto 0 auto 0;
   color: crimson;
   font-size: large;
-  display: none;
 }
 
 .nav-bar {
@@ -478,6 +480,7 @@ td {
     padding: 0.4rem 1rem 0.4rem 1rem;
     border: 2px solid crimson;
     border-radius: 5px;
+    display: block;
   }
 
   .nav-bar {
