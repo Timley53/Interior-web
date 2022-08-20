@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Lora&display=swap");
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: 0.9rem;
+  /* padding-top: 0.9rem; */
 }
 .grid-item-1 {
   width: 100%;
@@ -432,22 +433,24 @@ td {
   padding: 0.9rem 1rem 0.5rem 1rem;
 }
 .display {
-  display: none;
+  display: block;
 }
 
 /* media queries */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 450px) {
   .container {
+    width: 100%;
     padding: 0;
+    margin: 0;
   }
   .grid-item-1 {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0;
-    position: static;
     top: 0;
+    position: fixed;
     z-index: 100;
     background-color: rgba(240, 248, 255, 0.623);
     backdrop-filter: blur(5px);
@@ -461,23 +464,24 @@ td {
     display: flex;
     padding-left: 0;
     margin-left: 0;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     /* font-style: oblique; */
     justify-content: space-between;
   }
   .header h2 {
     margin-left: 0.5rem;
     font-family: sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .header i {
     margin: auto 0 auto 0;
     color: crimson;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     display: block;
   }
   .bar {
-    padding: 0.4rem 1rem 0.4rem 1rem;
+    margin-right: 40;
+    padding: 0.7rem;
     border: 2px solid crimson;
     border-radius: 5px;
     display: block;
@@ -486,14 +490,15 @@ td {
   .nav-bar {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    /* padding-right: 4rem; */
-    display: block;
+    padding-right: 0;
+    padding: 0;
+    display: none;
   }
   .display {
-    display: none;
+    display: block;
   }
   .nav-link {
     margin: auto 0 auto 0;
@@ -508,11 +513,22 @@ td {
 
     text-decoration: none;
     color: black;
-    font-family: sans-serif;
-    font-size: large;
+    font-family: serif;
+    font-size: 1rem;
     /* font-weight: bold; */
     transition: all 0.2s;
     position: relative;
+  }
+  .nav-link a::after {
+    content: " ";
+    position: absolute;
+    background-color: crimson;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s;
+    border-radius: 50px;
+    display: none;
   }
   .Sign {
     width: 100%;
@@ -542,13 +558,13 @@ td {
     flex-direction: column;
     margin-top: 4rem;
     margin-bottom: 3rem;
-    padding: 0.6rem;
+    padding: 1rem;
   }
 
   .revo {
     width: 100%;
     padding-left: 0;
-    font-size: larger;
+    font-size: 1.2rem;
     text-align: left;
   }
   .space-paragraph {
@@ -556,14 +572,14 @@ td {
   }
   .space-paragraph p {
     width: 90%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   /* grid 3 */
 
   .grid-item-3 {
     width: 100%;
-    height: 580px;
+    height: 500px;
     background-image: url("./images/pexels-vecislavas-popa-1571458.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -578,7 +594,7 @@ td {
     position: absolute;
     color: crimson !important;
     /* justify-content: space-between; */
-    bottom: -220;
+    bottom: -270;
     left: 70;
     background-color: white;
 
@@ -637,7 +653,7 @@ td {
   }
   /* grid 4 */
   .grid-item-4 {
-    padding-top: 12rem;
+    padding-top: 18rem;
     width: 100%;
     /* height: 1700px; */
     display: flex;
@@ -652,10 +668,10 @@ td {
   .home-int h1 {
     color: crimson;
     font-family: sans-serif;
-    font-size: 2.6rem;
+    font-size: 1.7rem;
   }
   .home-int p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .home-slide {
     width: 90%;
@@ -700,7 +716,7 @@ td {
 
   .slide h4,
   .slide p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .slide-1:hover.slide-1 h4,
@@ -738,25 +754,30 @@ td {
     font-family: sans-serif;
   }
   .left-section {
-    width: 100%;
-    padding: 1rem;
+    width: 90%;
+    padding: 0rem;
+    padding-left: 1.5rem;
   }
   .left-section p {
     width: 90%;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .right-section {
     width: 100%;
-    padding: 1rem;
+    padding: 0rem;
+    /* padding-left: 1.5rem; */
+    /* padding-bottom: 1rem; */
   }
   .right-section p {
     width: 90%;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    padding-left: 1.5rem;
   }
   .right-section button {
-    margin-top: 0.6rem;
-    padding: 1rem;
-    font-size: 1.3rem;
+    margin: 0.8rem;
+    /* margin-top: 0.6rem; */
+    padding: 0.7rem;
+    font-size: 1.1rem;
     border: 1px solid white;
     border-radius: 10px;
     background-color: transparent;
@@ -781,11 +802,11 @@ td {
     /* height: 200; */
   }
   .work-img h3 {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .work-img p {
     width: 90%;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   /* grid 6 */
 
@@ -802,7 +823,7 @@ td {
     width: 90%;
     padding: 0.7rem;
     padding: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .Indoor-Agency {
     margin-top: 5rem;
@@ -814,7 +835,7 @@ td {
   .room-studio {
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .Indoor-Agency {
@@ -837,7 +858,7 @@ td {
     width: 90%;
     /* height: 80%; */
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     backdrop-filter: blur(5px);
     right: -10;
     left: 0%;
@@ -851,7 +872,7 @@ td {
     width: 95%;
     text-align: center;
     margin-top: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .brandss img {
     width: 30%;
@@ -864,7 +885,7 @@ td {
     width: 100%;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .reviews {
     display: flex;
