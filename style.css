@@ -131,7 +131,8 @@ body {
 }
 @media screen and (max-width: 450px) {
   .container {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     display: grid;
     grid-template-columns: auto;
     font-size: 18px;
@@ -146,7 +147,6 @@ body {
     padding-bottom: 0.6rem;
     background-color: rgb(255, 255, 255);
     z-index: 110;
-    /* position: static; */
   }
   .header {
     width: 100%;
