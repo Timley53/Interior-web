@@ -134,7 +134,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: auto;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .grid-item-1 {
