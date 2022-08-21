@@ -146,7 +146,7 @@ body {
     padding-bottom: 0.6rem;
     background-color: rgb(255, 255, 255);
     z-index: 110;
-    position: static;
+    /* position: static; */
   }
   .header {
     width: 100%;
