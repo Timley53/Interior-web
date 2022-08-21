@@ -224,7 +224,7 @@ body {
     background-image: url(./images/pexels-vecislavas-popa-1571458.jpg);
     background-position: center;
     background-size: cover;
-    z-index: 101;
+    z-index: 99;
   }
   .overlay {
     position: absolute;
