@@ -372,8 +372,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
     background-color: rgb(230, 220, 220);
     z-index: 110;
   }
