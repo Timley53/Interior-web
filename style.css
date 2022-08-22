@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   scroll-behavior: smooth;
   padding: 0%;
@@ -286,7 +290,8 @@ body {
   /* position: absolute; */
   width: 80%;
   height: 30%;
-  background-color: rgba(220, 20, 60, 0.633);
+  background-color: rgba(59, 49, 51, 0.829);
+  color: white;
   padding: 0.7rem;
   backdrop-filter: blur(5px);
   font-size: 14px;
@@ -314,6 +319,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .reviews {
   display: flex;
@@ -340,11 +346,12 @@ body {
   width: 100%;
   padding-top: 1rem;
 }
-.grid-item-9 table {
-  margin: auto auto;
-}
-.grid-item-9 table td {
-  padding: 1rem;
+
+.grid-item-9 a {
+  color: black;
+  padding: 0.4rem;
+  padding-top: 0.6rem;
+  margin: 0.4rem;
 }
 /* none and queries */
 #nav-bar.display {
@@ -648,8 +655,10 @@ body {
     /* position: absolute; */
     width: 80%;
     height: 40%;
-    background-color: rgba(220, 20, 60, 0.8);
+    background-color: rgba(59, 49, 51, 0.829);
+    color: white;
     padding: 0.7rem;
+    padding-bottom: 0.9rem;
     backdrop-filter: blur(5px);
     font-size: 18px;
     border-radius: 10px;
@@ -707,11 +716,5 @@ body {
     text-align: center;
     width: 100%;
     padding-top: 1rem;
-  }
-  .grid-item-9 table {
-    margin: 0;
-  }
-  .grid-item-9 table td {
-    padding: 0.4rem;
   }
 }
